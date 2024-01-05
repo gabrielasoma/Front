@@ -1,0 +1,66 @@
+h1: titulo (del h1 a h6)
+ul: lista desordenada (puntos o viñetas)
+ul type=" circle, square,disc"
+ol: lista ordenada
+ol type="a, A,i,I,etc..."
+
+li: define un elemento de lista dentro de una lista(ul)
+p: párrafo
+b: negrita
+strong: negrita
+i: cursiva
+span: se usa para dar estilos (CSS) 
+
+sub: base
+sup: exponente
+
+br: salto de linea
+pre: te muestra el texto tal cual esta en el archivo html
+a: enlace
+a href = es la referencia de donde vamos a navegar 
+a ...target = "_blank" hace que se abra una nueva pestaña
+<a href="contacto.html#cookies">
+cookies es un id
+Esto nos lleva directamente a esa zona de la pag
+
+descargamos live server y ejecutamos el archivo html como live server
+
+table
+tr filas
+td celdas cabecera
+td celda convencional
+
+colspan: divide celdas (columnas de tabla)
+rowspan: divide celdas (filas de tabla)
+
+pixabay: página con muchs imágenes
+freekpik: página de recursos gráficos
+flaticon: iconos (formato svg)
+img:imagen
+alt: texto alternativo
+src="ruta de la imagen"
+
+div: es un agrupador de elementos
+id 
+class (.)
+
+elementos semanticos: serie de componentes de nuestra pág y se usa CSS
+header: cabecera
+nav: menu , estructura de navegación
+aside: menu lateral
+section: se puede estructura 
+article: se puede estructura 
+
+video:video
+<video src="img/cover.mp4" width="640px" controls></video>
+controls: hace que tenga la función de video
+
+controls autoplay: hace que el video se reproduzca en automatico
+mude: sonido apagado
+preload="none": no se carga hasta que le demos al play (plantalla en gris)
+preload="none" poster="img/ruta.png":pone imagen por defecto
+trak: subtitulos .vtt
+<video width="640px" controls>
+    <source src="img/cover.mp4">
+    <track>
+</video>

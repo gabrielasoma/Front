@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+</head>
+<body>
+   <h1>Tabla convencional</h1> 
+    <table border>
+        <tr><!--filas-->
+            <th>Nombre</th><!--celdas de cabecera-->
+            <th>Apellido</th>
+            <th>Ciudad</th>
+            <th>Edad</th>
+        </tr>
+        <tr><!--filas-->
+            <td>Laura</td><!--celdas convencional-->
+            <td>Pérez Gómez</td>
+            <td>Cádiz</td>
+            <td>35</td>
+        </tr>
+        <tr><!--filas-->
+            <td>Juan</td><!--celdas convencional-->
+            <td>Fernández López</td>
+            <td>Santiago de Chile</td>
+            <td>20</td>
+        </tr>
+    </table>
+
+    <h3>Tabla con atributo colspan</h3>
+    <table border>
+        <tr>
+            <th colspan="2">Datos personales</th><!--divide en columnas-->
+            <th colspan="3">Domicilio</th>
+        </tr>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellidos</th>
+            <th>Calle</th>
+            <th>Código postal</th>
+            <th>Localidad</th>
+        </tr>
+        <tr>
+            <td>Pedro</td>
+            <td>Jiménez</td>
+            <td>Serrano Galvache 33</td>
+            <td>28030</td>
+            <td>Madrid</td>
+        </tr>
+    </table>
+
+    <h3>Tabla con cabecera lateral y atributo rowspan</h3>
+    <table border>
+        <tr>
+            <th>Tº</th>
+            <th>Mes</th>
+            <td>Enero</td>
+            <td>Febrero</td>
+            <td>Marzo</td>
+        </tr>
+        <tr>
+            <th rowspan="2">1er Trimestre</th><!--divide en filas-->
+            <th>Tº Máxima</th>
+            <td>10ºC</td>
+            <td>2ºC</td>
+            <td>14ºC</td>
+        </tr>
+        <tr>
+            <th>Tº Mínima</th>
+            <td>0ºC</td>
+            <td>2ºC</td>
+            <td>4ºC</td>
+        </tr>
+    </table>
+</body>
+</html>

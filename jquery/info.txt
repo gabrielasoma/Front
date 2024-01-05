@@ -1,0 +1,12 @@
+https://jquery.com/download/
+
+$(document).ready(function(){
+}):
+//Sirve para que se cargue los elementos cuando se vayan a ejecutar
+$('#ec').hide();//ocultar el elemento
+
+
+id #
+class .
+
+addClass('cine');//addClass añade nombre de una clase css

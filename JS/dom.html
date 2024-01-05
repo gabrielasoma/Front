@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+<body>
+    <h1>DOM</h1>
+    <h4 id="main-title" onclick="toggleModal1()">Lorem ipsum</h4>
+    
+    <!--Por id-->
+    <input type="text" placeholder="Escriba su nombre...">
+    <button>Cancelar</button>
+    <button>Enviar</button>
+    <p class="instruction">Pulse cancelar para volver al menú</p>
+    <a href="#" class="dinamic-link">Click aquí</a>
+    <ul class="jumbo">
+        <li>Opción 1</li>
+        <li>Opción 2</li>
+        <li>Opción 3</li>
+    </ul>
+    <div class="overlay"></div>
+    <div class="modal">
+        <p>Bienvenidos</p>
+        <button onclick="toggleModal1()">Aceptar</button>
+    </div>
+   
+
+    <script src="dom.js"></script>
+</body>
+</html>
