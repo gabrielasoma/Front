@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./interpolation.component.css']
 })
 export class InterpolationComponent implements OnInit {
-
+  //Creamos objeto actores
   actor: any = {
     nombre: 'Gabriela',
     apellidos: 'Zapata',
@@ -14,12 +14,12 @@ export class InterpolationComponent implements OnInit {
   }
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {//inicio
   }
 
-  getEdad(): number {
+  getEdad(): number {//obtenemos la edad de la persona, la recibimos como date y se la devuelve como numero
     const edad = (new Date().getTime() - this.actor.fechaNacimiento.getTime()) / (365 * 24 * 60 * 60 * 1000);
-    return Math.floor(edad);
+    return Math.floor(edad);//devuelve edad
   }
   
 }

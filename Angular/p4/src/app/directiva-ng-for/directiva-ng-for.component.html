@@ -1,0 +1,15 @@
+<div class="card">
+    <h1>Ejemplp de directiva *ngFor</h1>
+    <table>
+        <tr>
+            <th>Nº</th>
+            <th>Proveedor</th>
+            <th>CIF</th>
+        </tr>
+        <tr *ngFor="let proveedor of proveedores; let i = index">
+            <td>{{i +1}}</td>
+            <td>{{proveedor.nombre}}</td>
+            <td>{{proveedor.cif}}</td>
+        </tr>
+    </table>
+</div>

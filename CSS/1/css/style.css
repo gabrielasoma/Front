@@ -1,0 +1,9 @@
+button{
+    /*propiedad : valor*/
+    background-color: tomato;
+    color:white;
+    padding: 10px 20px; /*arriba abajo, derecha izquierda*/
+    border:1px solid tomato;
+    border-radius: 5px;
+
+}

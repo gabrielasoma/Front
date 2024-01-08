@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-100">
+        <h1>Listado de clientes</h1>
+        <table>
+            <tr>
+                <th>Cliente</th>
+                <th>CIF</th>
+                <th>Domicilio</th>
+            </tr>
+            <tr *ngFor="let cliente of clientes">
+                <td>{{cliente.nombre}}</td>
+                <td>{{cliente.cif}}</td>
+                <td>{{cliente.domicilio}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

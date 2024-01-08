@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="style.css">
+rel: stylesheet
+href: direccion de fichero
+id: #
+class: .
+span: implementa estilos CSS, atributos sin alterar la estructura general del html, contenedor genérico
+
+ /*propiedad : valor*/
+font-size: tamaño de fuente
+background-color: color de fondo;
+padding: 10px 20px; /*arriba abajo, derecha izquierda*/ relleno, espaciado (espacio entre el borde de un elemento y su contenido interno)
+border:1px solid tomato;
+border-radius: 5px;
+color: color de fuente
+box-shadow: caja con sombra
+
+/*Selector por pseudoclase*/
+hover: evento cuando el usuario pasa el ratón encima del elemento seleccionado
+.destacada:hover{
+}
+

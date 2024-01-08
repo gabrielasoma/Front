@@ -1,0 +1,9 @@
+<div class="card">
+    <h1>Componente padre</h1>
+    <p>Valor en el padre {{valorPadre}}</p>
+    <!--conecta el componente hijo dentro del componente padre-->
+    <app-hijo [valorHijo]="valorPadre" (valor)="getValor($event)"></app-hijo>
+    <!--Estable conexion entre el padre e hijo para mandar info de ambas partes: 
+        padre a hijo = valorHijo
+        hijo a padre = valor-->
+</div>

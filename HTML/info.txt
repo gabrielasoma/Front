@@ -64,3 +64,14 @@ trak: subtitulos .vtt
     <source src="img/cover.mp4">
     <track>
 </video>
+
+hr: separa bloques de contenido
+
+========
+Formulario
+action: enlace con archivos que trata la info que se recoge en el formulario
+label: etiqueta para describir con un texto de que trata el campo del enunciado
+type: tipo de datos que va a introducir el usuario
+input: caja vacía que permite al usuario escribir para luego enviar la info
+placeholder: permite escribir al usuario, y por defecto tiene un valor, cuando el usuario escribe este valor desaparece
+name: se usa para asignar nombre a un elemento HTML, permite identificarlo y referirse a él (formulario(radio,check))

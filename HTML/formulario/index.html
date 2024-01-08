@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <label for="user">Usuario</label>
+        <input type="text" id="user">
+        <label for="pass">Contraseña</label>
+        <input type="password" id="pass">
+        <input type="submit" value="Iniciar sesión">
+    </form>
+
+    <!--Formulario de búsqueda sin botón de envío-->
+    <hr>
+    <form action="">
+        <input type="search" placeholder="Buscar...">
+    </form>
+    <!--Formulario con campo numérico-->
+    <hr>
+    <form>
+        <label for="cantidad">Cantidad</label>
+        <input type="number" max="10" min="5" id="cantidad">
+        <input type="submit" value="Añadir">
+    </form>
+    <!--Formulario con campo fechas-->
+    <hr>
+    <form>
+        <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" id="fecha" min="1900-01-01" max="2050-12-31">
+        <input type="submit" value="Añadir">
+    </form>
+    <hr>
+    <!--Formulario radiobuttons-->
+    <form>
+        <label for="hombre">Hombre</label>
+        <input type="radio" value="hombre" id="hombre" name="sexo">
+        <label for="mujer">Mujer</label>
+        <input type="radio" value="mujer" id="mujer"  name="sexo">
+        <label for="nc">Prefiero no contestar</label>
+        <input type="radio" value="nc" id="nc"  name="sexo">
+    </form>
+    <!--Formulario con input embebido dentro del label-->
+    <hr>
+    <form>
+        <label>
+            <input type="radio" value="futbol" name="deporte">
+            Futbol
+        </label>
+        <label>
+            <input type="radio" value="baloncesto" name="deporte">
+            Baloncesto
+        </label>
+    </form>
+    <hr>
+      <!--Formulario con checkbox-->
+      <form>
+        <label>
+            Pintura
+            <input type="checkbox" value="si" name="pintura" checked>
+        </label>
+        <label>
+            Escultura
+            <input type="checkbox" value="si" name="pintura">
+        </label>
+        <label>
+            Literatura
+            <input type="checkbox" value="si" name="literatura">
+        </label>
+      </form>
+      <hr>
+    <!--Formulario con select-->
+    <form>
+        <label for="deporte">Seleccione deporte favorito</label>
+        <select name="deporte" id="deporte">
+            <option value="futbol">Futbol</option>
+            <option value="baloncesto">Baloncesto</option>
+            <option value="ciclismo">Ciclismo</option>
+        </select>
+    </form>  
+    <hr>
+    <!--Formulario con elemento textarea-->
+    <form>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" cols="30" rows="10"></textarea>
+    </form>
+    <hr>
+    <!--Formulario con elemento button-->
+    <form>
+        <label for="old-pass">Antigua contraseña</label>
+        <input type="password" id="old-pass">
+        <label for="new-pass">Nueva contraseña</label>
+        <input type="password" id="new-pass">
+        <button>Cancelar</button>
+        <button type="submit">Guardar contraseña</button>
+    </form>
+
+
+</body>
+</html>

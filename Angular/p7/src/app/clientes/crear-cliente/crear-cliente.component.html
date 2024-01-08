@@ -1,0 +1,22 @@
+<div class="row">
+    <div class="col-25"></div>
+    <div class="col-50">
+        <form>
+            <div class="row">
+                <label>Nombre</label>
+                <input type="text" name="nombre" [(ngModel)]="cliente.nombre">
+            </div>
+            <div class="row">
+                <label>CIF</label>
+                <input type="text" name="cif" [(ngModel)]="cliente.cif">
+            </div>
+            <div class="row">
+                <label>Domicilio</label>
+                <input type="text" name="localidad" [(ngModel)]="cliente.domicilio">
+            </div>
+            <div class="row end">
+                <button (click)="addCliente()" type="button">Añadir</button>
+            </div>
+        </form>
+    </div>
+</div>

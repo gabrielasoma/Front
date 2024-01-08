@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="row">
+        <form [formGroup]="form" (ngSubmit)="enviarCliente()">
+            <div class="row">
+                <div class="col-100">
+                    <label>
+                        Nombre Cliente
+                        <span class="danger" *ngIf="form.controls.nombre.invalid">Obligatorio</span>
+                    </label>
+                    <input type="text" formControlName="nombre">
+                </div>
+                <div class="col-100">
+                    <label>
+                        CIF
+                        <span class="danger" *ngIf="form.controls.cif.invalid">Obligatorio(3 caracteres)</span>
+                    </label>
+                    <input type="text" formControlName="cif">
+                </div>
+                <div class="col-100">
+                    <label>Dirección</label>
+                    <input type="text" formControlName="direccion">
+                </div>
+                <div class="col-100">
+                    <label>Localidad</label>
+                    <input type="text" formControlName="localidad">
+                </div> 
+                <div class="row">
+                    <div class="col-100 flex j-end">
+                        <button [disabled]="form.invalid" type="submit">Enviar</button>
+                    </div>
+                </div>
+                <pre>
+                    {{form.value | json}}
+                    Estado pristine {{form.controls.cif.pristine}}
+                    Estado dirty {{form.controls.cif.dirty}}
+                    Estado touched :{{form.controls.cif.touched}}
+                    Estado untouched :{{form.controls.cif.untouched}}
+                    Estado valid :{{form.controls.cif.valid}}
+                    Estado invalid {{form.controls.cif.invalid}}             
+                    Estado valid todo el formulario : {{form.valid}}
+                </pre>
+                
+            </div>
+        </form>
+    </div>
+</div>
